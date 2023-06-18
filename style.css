@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+}
+header{
+background-color: rgb(71, 69, 69);
+color: #f0eeed;
+
+}
+
+.team_logo{
+    border-radius: 25px;
+    height: 200px;
+    width: 300px;
+
+}
+
+.cont {
+    max-width: 980px;
+    margin: 0 auto;
+
+}
+
+.item {
+    border-radius: 25px;
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+@media (max-width: 964px) {
+    .blocks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .item {
+        border-radius: 25px;
+        height: 300px;
+        width: 450px;
+        border: 1px solid black;
+    }
+    .team_logo{
+        border-radius: 25px;
+        height: 300px;
+        width: 450px;
+    
+    }
+}
+
+@media (max-width: 830px) {
+    .blocks {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .item {
+        border-radius: 25px;
+        height: 500px;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .team_logo{
+        border-radius: 25px;
+        height: 500px;
+        width: 100%;
+    
+    }
+}
+
+
+
+header {
+    height: 75px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+
+}
+
+.header__box {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: flex;
+    height: 75px;
+    align-items: center;
+
+
+}
+
+.menu__item {
+    margin-right: 20px;
+}
+
+.header__menu__mobile {
+    display: none;
+}
+.mobile__button{
+    display: none;
+
+}
+
+.logo{
+height: 50px;
+width: 75px;
+
+}
+@media (max-width:540px) {
+    .blocks{
+        margin-top:300px;
+    }
+    .mobile__button{
+        display: block;
+        height: 50px;
+        width: 50px;
+
+        background: url("gg_menu-left-alt.svg");
+    }
+    .header__menu {
+        display: none;
+    }
+
+    .header__box {
+        justify-content: space-around;
+        background: rgb(71, 69, 69);
+    }
+
+    .header__menu__mobile {
+        display: block;
+
+        border: 1px solid black;
+        text-align: center;
+
+        background: rgb(71, 69, 69);
+        margin-bottom: 500px;
+    }
+
+    .menu__item__mobile {
+        height: 45px;
+
+    }
+
+    
+}
+
+.text{
+    margin-top: 25px;
+    border-radius: 25px;
+    background: rgb(163, 155, 155);
+    padding: 25px;
+
+}
+
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
